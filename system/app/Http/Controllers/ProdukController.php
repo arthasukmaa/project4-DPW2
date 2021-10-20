@@ -33,14 +33,13 @@ class ProdukController extends Controller {
 		$produk->Nama = request('Nama');
 		$produk->Harga = request('Harga');
 		$produk->Deskripsi = request('Deskripsi');
-		$produk->save()->with('success', 'Data Berhasil ditambah');
-
-		return redirect('admin/produk');
+		$produk->save();
+		return redirect('admin/produk')->with('success','Data Berhasil Diedit');
 
 	}
 	function destroy(produk $produk){
 		$produk->delete();
-		return redirect('admin/produk')->with('danger', 'Data Berhasil ditambah');
+		return redirect('admin/produk')->with('danger', 'Data Berhasil Dihapus');
 
 
 	}

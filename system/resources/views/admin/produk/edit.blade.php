@@ -8,7 +8,7 @@
 			   </div class="card-header">
 			        <div class="row">
 			        	<div class="col-md-6">
-			        		<h3> Tambah Data Produk</h3>
+			        		<h3> Edit Data Produk</h3>
 			        	</div>
 			        	<div class="card-body">
 			        		<form action="{{url('admin/produk', $produk->id)}}" method= "post">

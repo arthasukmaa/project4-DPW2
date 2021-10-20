@@ -19,8 +19,8 @@
 
 			<main class="content">
 				<div class="container-fluid p-0">
-					@yield('content')
 					@include('admin.utils.notif')
+					@yield('content')
 					
 				</div>
 			</main>
